@@ -45,12 +45,14 @@ public class GUI {
         // Setup user interface
         frame = new JFrame("Yaj Editor");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.setVisible(true);
-        frame.setPreferredSize(new Dimension(800, 800));
+        frame.setSize(1000, 700);
         frame.add(panel);
+        frame.setVisible(true);
 
         editArea.setTabSize(tabSize);
         outputArea.setEditable(false);
+        editArea.setFont(editArea.getFont().deriveFont(14f));
+        outputArea.setFont(outputArea.getFont().deriveFont(14f));
 
         // Add event listeners for buttons
         runButton.addActionListener(this::runListener);
