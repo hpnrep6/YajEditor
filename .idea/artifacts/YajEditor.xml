@@ -1,6 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="jar" name="YajEditor">
-    <output-path>$PROJECT_DIR$/out/artifacts/YajEditor</output-path>
-    <root id="archive" name="YajEditor.jar" />
-  </artifact>
-</component>
