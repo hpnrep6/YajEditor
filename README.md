@@ -9,4 +9,6 @@ A code editor for Yaj.
 
 ## Gallery
 
-![screenshot](https://user-images.githubusercontent.com/57055412/153349705-9f84ebc1-b4f7-4c0a-8b3f-6833fe85ddf1.png)
+![screenshot](https://user-images.githubusercontent.com/57055412/153560815-172aa6f4-27fc-4e04-a7ed-d7a1300d0e15.png)
+
+![screenshot](https://user-images.githubusercontent.com/57055412/153560820-fc3d4d49-5179-44d3-8791-f0b54cef26cf.png)
