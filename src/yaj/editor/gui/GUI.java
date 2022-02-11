@@ -33,6 +33,8 @@ public class GUI {
     private JButton closeButton;
     private JLabel fileSelectorName;
     private JButton quitButton;
+    private JScrollPane scroll1;
+    private JScrollPane scroll2;
 
     private InterpreterCreator creator;
 
@@ -65,6 +67,7 @@ public class GUI {
 
     /**
      * ActionListener to run the code
+     *
      * @param event Action event
      */
     private void runListener(ActionEvent event) {
@@ -74,6 +77,7 @@ public class GUI {
 
     /**
      * ActionListener to print the syntax tree
+     *
      * @param event Action event
      */
     private void printListener(ActionEvent event) {
@@ -83,6 +87,7 @@ public class GUI {
 
     /**
      * ActionListener to choose a file
+     *
      * @param event Action event
      */
     private void fileListener(ActionEvent event) {
@@ -111,6 +116,7 @@ public class GUI {
 
     /**
      * ActionListener to save the file
+     *
      * @param event Action event
      */
     private void saveListener(ActionEvent event) {
@@ -119,6 +125,7 @@ public class GUI {
 
     /**
      * ActionListener to close the file
+     *
      * @param event Action event
      */
     private void closeListener(ActionEvent event) {
@@ -127,6 +134,7 @@ public class GUI {
 
     /**
      * ActionListener to close the editor
+     *
      * @param event Action event
      */
     private void quitListener(ActionEvent event) {
@@ -222,10 +230,10 @@ public class GUI {
         panel.add(spacer4, new com.intellij.uiDesigner.core.GridConstraints(4, 1, 1, 1, com.intellij.uiDesigner.core.GridConstraints.ANCHOR_CENTER, com.intellij.uiDesigner.core.GridConstraints.FILL_VERTICAL, 1, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_WANT_GROW, null, null, null, 0, false));
         final com.intellij.uiDesigner.core.Spacer spacer5 = new com.intellij.uiDesigner.core.Spacer();
         panel.add(spacer5, new com.intellij.uiDesigner.core.GridConstraints(3, 1, 1, 1, com.intellij.uiDesigner.core.GridConstraints.ANCHOR_CENTER, com.intellij.uiDesigner.core.GridConstraints.FILL_VERTICAL, 1, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_WANT_GROW, null, null, null, 0, false));
-        final JScrollPane scrollPane1 = new JScrollPane();
-        panel.add(scrollPane1, new com.intellij.uiDesigner.core.GridConstraints(3, 2, 5, 3, com.intellij.uiDesigner.core.GridConstraints.ANCHOR_CENTER, com.intellij.uiDesigner.core.GridConstraints.FILL_BOTH, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_CAN_SHRINK | com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_WANT_GROW, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_CAN_SHRINK | com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_WANT_GROW, null, null, null, 0, false));
+        scroll1 = new JScrollPane();
+        panel.add(scroll1, new com.intellij.uiDesigner.core.GridConstraints(3, 2, 5, 3, com.intellij.uiDesigner.core.GridConstraints.ANCHOR_CENTER, com.intellij.uiDesigner.core.GridConstraints.FILL_BOTH, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_CAN_SHRINK | com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_WANT_GROW, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_CAN_SHRINK | com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_WANT_GROW, null, null, null, 0, false));
         outputArea = new JTextArea();
-        scrollPane1.setViewportView(outputArea);
+        scroll1.setViewportView(outputArea);
         runButton = new JButton();
         runButton.setText("Run");
         panel.add(runButton, new com.intellij.uiDesigner.core.GridConstraints(2, 2, 1, 1, com.intellij.uiDesigner.core.GridConstraints.ANCHOR_CENTER, com.intellij.uiDesigner.core.GridConstraints.FILL_HORIZONTAL, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_CAN_SHRINK | com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_CAN_GROW, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_FIXED, null, null, null, 0, false));
@@ -251,10 +259,10 @@ public class GUI {
         panel.add(spacer9, new com.intellij.uiDesigner.core.GridConstraints(6, 0, 1, 1, com.intellij.uiDesigner.core.GridConstraints.ANCHOR_CENTER, com.intellij.uiDesigner.core.GridConstraints.FILL_HORIZONTAL, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_FIXED, 1, new Dimension(10, 1), null, null, 0, false));
         final com.intellij.uiDesigner.core.Spacer spacer10 = new com.intellij.uiDesigner.core.Spacer();
         panel.add(spacer10, new com.intellij.uiDesigner.core.GridConstraints(0, 4, 1, 1, com.intellij.uiDesigner.core.GridConstraints.ANCHOR_CENTER, com.intellij.uiDesigner.core.GridConstraints.FILL_VERTICAL, 1, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_FIXED, new Dimension(1, 10), null, null, 0, false));
-        final JScrollPane scrollPane2 = new JScrollPane();
-        panel.add(scrollPane2, new com.intellij.uiDesigner.core.GridConstraints(2, 5, 7, 4, com.intellij.uiDesigner.core.GridConstraints.ANCHOR_CENTER, com.intellij.uiDesigner.core.GridConstraints.FILL_BOTH, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_CAN_SHRINK | com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_WANT_GROW, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_CAN_SHRINK | com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_WANT_GROW, null, null, null, 0, false));
+        scroll2 = new JScrollPane();
+        panel.add(scroll2, new com.intellij.uiDesigner.core.GridConstraints(2, 5, 7, 4, com.intellij.uiDesigner.core.GridConstraints.ANCHOR_CENTER, com.intellij.uiDesigner.core.GridConstraints.FILL_BOTH, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_CAN_SHRINK | com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_WANT_GROW, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_CAN_SHRINK | com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_WANT_GROW, null, null, null, 0, false));
         editArea = new JTextArea();
-        scrollPane2.setViewportView(editArea);
+        scroll2.setViewportView(editArea);
         closeButton = new JButton();
         closeButton.setText("Close");
         panel.add(closeButton, new com.intellij.uiDesigner.core.GridConstraints(8, 3, 1, 1, com.intellij.uiDesigner.core.GridConstraints.ANCHOR_CENTER, com.intellij.uiDesigner.core.GridConstraints.FILL_HORIZONTAL, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_CAN_SHRINK | com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_CAN_GROW, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_FIXED, null, null, null, 0, false));
