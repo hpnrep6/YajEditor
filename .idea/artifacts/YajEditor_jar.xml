@@ -3,11 +3,10 @@
     <output-path>$PROJECT_DIR$/out/artifacts/YajEditor_jar</output-path>
     <root id="archive" name="YajEditor.jar">
       <element id="module-output" name="YajEditor" />
-      <element id="extracted-dir" path="$PROJECT_DIR$/lib/Yaj-v1.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/Yaj.jar" path-in-jar="/" />
       <element id="extracted-dir" path="$KOTLIN_BUNDLED$/lib/kotlin-stdlib.jar" path-in-jar="/" />
       <element id="extracted-dir" path="$KOTLIN_BUNDLED$/lib/kotlin-reflect.jar" path-in-jar="/" />
       <element id="extracted-dir" path="$KOTLIN_BUNDLED$/lib/kotlin-test.jar" path-in-jar="/" />
-      <element id="library" level="project" name="commons-io-2.11.0" />
     </root>
   </artifact>
 </component>
